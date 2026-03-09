@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.activity.compose.BackHandler
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -64,6 +65,10 @@ fun MatrixRelayUI(vm: MainViewModel, context: Context) {
     var showEventFeed by remember { mutableStateOf(false) }
     
     if (showEventFeed) {
+        // Intercept system back / swipe-to-go-back and return to dashboard
+        BackHandler(enabled = true) {
+            showEventFeed = false
+        }
         val events = vm.eventsList.collectAsState()
         EventFeedScreen(events.value) { showEventFeed = false }
     } else {
@@ -391,37 +396,6 @@ private fun RelayURLSection(
             }
         }
 
-        Spacer(modifier = Modifier.height(8.dp))
-
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .clip(RoundedCornerShape(8.dp))
-                .background(Color(0xFF0A1428).copy(alpha = 0.3f))
-                .padding(10.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            Text(
-                text = "LAN IP: $ipAddress",
-                fontSize = 13.sp,
-                color = Color(0xFF00D9FF),
-                fontWeight = FontWeight.Medium,
-                modifier = Modifier.weight(1f)
-            )
-            Text(
-                text = "📋",
-                fontSize = 16.sp,
-                color = Color(0xFFA0A0A0),
-                modifier = Modifier
-                    .size(20.dp)
-                    .clickable {
-                        val clip = ClipData.newPlainText("relay_ip", ipAddress)
-                        clipboardManager.setPrimaryClip(clip)
-                        onCopied.invoke()
-                    }
-            )
-        }
     }
 }
 

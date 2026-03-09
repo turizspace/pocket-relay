@@ -10,6 +10,8 @@
 # Gradle wrapper distribution and libs (don't commit heavy binaries)
 gradle/wrapper/gradle-*/
 gradle/wrapper/gradle-*/**
+gradle/wrapper/*.zip
+gradle/wrapper/*.tar
 
 # Kotlin/Java
 /out/
