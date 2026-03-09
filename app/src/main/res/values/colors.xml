@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matrix Dark Mode Palette -->
+    <color name="dark_bg">#0A1428</color>
+    <color name="dark_surface">#162749</color>
+    <color name="dark_surface_variant">#1E3A5F</color>
+    
+    <!-- Neon Green/Cyan Accents (Matrix Theme) -->
+    <color name="neon_green">#00FF41</color>
+    <color name="neon_cyan">#00D9FF</color>
+    <color name="neon_green_light">#39FF14</color>
+    <color name="glow_green">#1AFF00</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_primary">#00D9FF</color>
+    <color name="accent_secondary">#00FF41</color>
+    <color name="accent_tertiary">#FF00FF</color>
+    
+    <!-- Status Colors -->
+    <color name="status_active">#00FF41</color>
+    <color name="status_inactive">#FF6B6B</color>
+    <color name="status_warning">#FFD93D</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A0A0A0</color>
+    <color name="text_tertiary">#707070</color>
+    
+    <!-- Legacy Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

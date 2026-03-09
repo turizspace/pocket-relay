@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Simple Material Components Dark Theme -->
+    <style name="Theme.PocketRelay" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary -->
+        <item name="colorPrimary">@color/neon_cyan</item>
+        <item name="colorPrimaryVariant">@color/dark_surface_variant</item>
+        
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/neon_green</item>
+        <item name="colorSecondaryVariant">@color/dark_surface_variant</item>
+        
+        <!-- Status Bar -->
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="android:statusBarColor">@color/dark_bg</item>
+        <item name="android:navigationBarColor">@color/dark_bg</item>
+        
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Window Attributes -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
