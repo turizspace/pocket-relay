@@ -12,6 +12,7 @@ gradle/wrapper/gradle-*/
 gradle/wrapper/gradle-*/**
 gradle/wrapper/*.zip
 gradle/wrapper/*.tar
+turiz.keystore
 
 # Kotlin/Java
 /out/
