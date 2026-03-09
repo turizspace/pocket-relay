@@ -1,0 +1,36 @@
+
+# Android/Gradle
+/build/
+/app/build/
+/.gradle/
+/.idea/
+/.gradle/
+/*.iml
+
+# Gradle wrapper distribution and libs (don't commit heavy binaries)
+gradle/wrapper/gradle-*/
+gradle/wrapper/gradle-*/**
+
+# Kotlin/Java
+/out/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE files
+.vscode/
+
+# Generated APKs
+*.apk
+*.ap_ 
+
+# Logs
+*.log
+
+# Local config
+local.properties
+
+# Python
+__pycache__/
+
