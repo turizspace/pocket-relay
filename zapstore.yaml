@@ -1,0 +1,16 @@
+repository: https://github.com/turizspace/pocket-relay.git
+name: Pocket Relay
+summary: Local Nostr relay and Android companion app
+description: "Lightweight Nostr relay and Android app for running a local relay, viewing and persisting events, and testing Nostr clients locally. Built with Kotlin, Jetpack Compose, and Ktor."
+icon: png_pocket_relay.png
+license: MIT
+tags:
+  - nostr
+  - android
+  - relay
+  - pocket-relay
+  - nip01
+remote_metadata:
+  - github
+assets:
+  - '.*\.apk'
