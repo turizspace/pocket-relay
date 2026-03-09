@@ -3,5 +3,6 @@
     <include domain="sharedpref" path="." />
     <include domain="database" path="." />
     <include domain="file" path="." />
-    <include domain="cache" path="." />
+    <!-- cache is under the app's root; include the cache directory explicitly -->
+    <include domain="root" path="cache" />
 </full-backup-content>
